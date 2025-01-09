@@ -26,7 +26,7 @@ def lotka_volterra_simulation(a, b, c, d, x0, y0, t0, t_end, h):
     y_values = []
     x, y = x0, y0
 
-    for t in t_values:
+    for _ in t_values:
         x_values.append(x)
         y_values.append(y)
         dx_dt = a * x - b * x * y
