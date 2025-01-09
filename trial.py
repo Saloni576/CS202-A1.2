@@ -7,15 +7,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Constants for the Lotka-Volterra equations
-A = 1.2  
-B = 0.6  
-C = 0.8  
-D = 0.3  
-X0 = 2.0  
-Y0 = 1.0  
-T0 = 0.0  
-T_END = 20.0  
-H = 0.1  
+A = 1.2
+B = 0.6
+C = 0.8
+D = 0.3
+X0 = 2.0
+Y0 = 1.0
+T0 = 0.0
+T_END = 20.0
+H = 0.1
 
 def lotka_volterra_simulation(a, b, c, d, x0, y0, t0, t_end, h):
     """
