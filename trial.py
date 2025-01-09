@@ -17,14 +17,13 @@ T0 = 0.0
 T_END = 20.0
 H = 0.1
 
-def lotka_volterra_simulation(a, b, c, d, x0, y0, t0, t_end, h):
+def lotka_volterra_simulation(a, b, c, d, x, y, t0, t_end, h):
     """
     Simulates the Lotka-Volterra predator-prey model using Euler's method.
     """
     t_values = np.arange(t0, t_end + h, h)
     x_values = []
     y_values = []
-    x, y = x0, y0
 
     for _ in t_values:
         x_values.append(x)
