@@ -22,16 +22,6 @@ SIMULATION_PARAMS = {
 def lotka_volterra_simulation(params):
     """
     Simulates the Lotka-Volterra predator-prey model using Euler's method.
-
-    Args:
-        params (dict): A dictionary containing simulation parameters:
-            - a, b, c, d: Lotka-Volterra constants.
-            - x0, y0: Initial populations of prey and predators.
-            - t0, t_end: Start and end times for simulation.
-            - h: Time step size.
-
-    Returns:
-        tuple: Arrays for time, prey population, and predator population.
     """
     t_values = np.arange(params["t0"], params["t_end"] + params["h"], params["h"])
     x_values, y_values = [], []
